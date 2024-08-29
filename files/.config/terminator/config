@@ -1,0 +1,30 @@
+[global_config]
+  enabled_plugins = TerminalShot, APTURLHandler
+  handle_size = 0
+  title_transmit_bg_color = "#560042"
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    audible_bell = True
+    copy_on_selection = True
+    cursor_color = "#10c800"
+    cursor_shape = ibeam
+    custom_command = /usr/bin/tmux
+    font = DejaVu Sans Mono 11
+    foreground_color = "#d9d9d9"
+    scrollback_infinite = True
+    use_custom_command = True
+    use_system_font = False
+    visible_bell = True
+  [[notmux]]

@@ -1,0 +1,25 @@
+
+html {
+  color: #FDFDFD !important;
+}
+
+html, html body {
+  background-color: #111111 !important;
+}
+
+html a {
+  color: #0FFFFF !important;
+}
+
+html blockquote[type="cite"],
+span[_moz_quote="true"] {
+  color: #FF85F7 !important;
+}
+
+html blockquote[type="cite"] {
+  border-inline-start-color: #FF85F7 !important;
+}
+
+html body * {
+  font-size: 16px !important;
+}

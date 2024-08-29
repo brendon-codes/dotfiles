@@ -1,0 +1,16 @@
+[user]
+	email = user@example.com
+	name = John Doe
+[alias]
+        c = checkout
+        b = branch
+        s = status
+        t = tag --sort="v:refname"
+[pull]
+        rebase = true
+[fetch]
+        prune = true
+[diff]
+        colorMoved = 
+[init]
+        defaultBranch = master
