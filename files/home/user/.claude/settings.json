@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__rust-analyzer-lsp*"
+    ],
+    "defaultMode": "plan"
+  },
+  "enabledPlugins": {
+    "rust-analyzer-lsp@claude-plugins-official": false
+  },
+  "forceLoginMethod": "claudeai",
+  "skipDangerousModePermissionPrompt": true,
+  "skipAutoPermissionPrompt": true,
+  "autoUpdates": true,
+  "env": {
+    "CLAUDE_CODE_EFFORT_LEVEL": "max",
+    "CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING": "1",
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
+  },
+  "extraKnownMarketplaces": {
+    "shopify-ai-toolkit": {
+      "source": {
+        "source": "github",
+        "repo": "Shopify/shopify-ai-toolkit"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "shopify-plugin@shopify-ai-toolkit": false
+  }
+}
+

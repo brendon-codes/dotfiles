@@ -1,0 +1,4 @@
+MailReader=custom-MailReader
+WebBrowser=chromium-browser
+TerminalEmulator=alacritty
+

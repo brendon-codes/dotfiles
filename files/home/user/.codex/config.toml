@@ -1,0 +1,16 @@
+model = "gpt-5.5"
+model_verbosity = "medium"
+model_reasoning_effort = "xhigh"
+personality = "pragmatic"
+plan_mode_reasoning_effort = "xhigh"
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp", "--api-key", "ctx7sk-xxxxxxxxxxxx"]
+
+[tui.model_availability_nux]
+"gpt-5.5" = 2
+
+[features]
+apps = false
+

@@ -1,0 +1,250 @@
+{
+    "editor.minimap.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "editor.rename.enablePreview": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.autoClosingQuotes": "never",
+    "editor.wordWrap": "on",
+    "editor.autoClosingBrackets": "never",
+    "editor.inlineSuggest.enabled": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorCustomizations": {
+        "editor.background": "#000000",
+        "terminal.background": "#000000",
+        "sideBar.background": "#000000",
+        "sideBarSectionHeader.background": "#000000"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "meta.indexed-name.python",
+                "settings": {
+                    "foreground": "#07d100",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "meta.function-call.generic.python",
+                "settings": {
+                    "foreground": "#ffe600",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "meta.item-access.arguments.python",
+                "settings": {
+                    "foreground": "#ffdbac",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "meta.function.parameters.python",
+                "settings": {
+                    "foreground": "#9aff8c",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "meta.function-call.arguments.python",
+                "settings": {
+                    "foreground": "#ffbcff",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "meta.attribute.python",
+                "settings": {
+                    "foreground": "#bdbcff",
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "update.mode": "none",
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "docker-compose*.yml"
+    },
+    "workbench.startupEditor": "none",
+    "files.restoreUndoStack": false,
+    "files.associations": {
+        "*.toml": "toml",
+        "*.json": "json",
+        "*.liquid": "liquid"
+    },
+    "editor.find.seedSearchStringFromSelection": "never",
+    "workbench.colorTheme": "GitHub Dark High Contrast",
+    "window.newWindowProfile": "Default",
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.suggest.enabled": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.tabs.description": "${shellPromptInput}",
+    "editor.accessibilitySupport": "off",
+    "git.terminalGitEditor": true,
+    "editor.tabSize": 2,
+    "git.openRepositoryInParentFolders": "never",
+    "redhat.telemetry.enabled": false,
+    "editor.fontSize": 15,
+    "debug.console.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.scrollback": 1000000,
+    "[css]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showWords": false,
+        "editor.suggest.showSnippets": false
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showWords": false,
+        "editor.suggest.showSnippets": false
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showWords": false,
+        "editor.suggest.showSnippets": false
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showWords": false,
+        "editor.suggest.showSnippets": false
+    },
+    "[json]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showWords": false,
+        "editor.suggest.showSnippets": false
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "sqlfluff.vscode-sqlfluff",
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showWords": false,
+        "editor.suggest.showSnippets": false
+    },
+    "workbench.editorAssociations": {
+        "*.svg": "default"
+    },
+    "terminal.integrated.showExitAlert": false,
+    "workbench.preferredDarkColorTheme": "GitHub Dark High Contrast",
+    "workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
+    "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast",
+    "workbench.preferredLightColorTheme": "GitHub Light Default",
+    "workbench.tips.enabled": false,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showWords": false,
+        "editor.suggest.showSnippets": false
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showWords": false,
+        "editor.suggest.showSnippets": false
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showWords": false,
+        "editor.suggest.showSnippets": false
+    },
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.terminal.focusNext"
+    ],
+    "python.terminal.shellIntegration.enabled": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.tabCompletion": "off",
+    "editor.snippetSuggestions": "none",
+    "editor.suggest.showWords": false,
+    "editor.suggest.showSnippets": false,
+    "editor.suggest.showColors": false,
+    "editor.suggest.showCustomcolors": false,
+    "editor.suggest.showFiles": false,
+    "editor.suggest.showFolders": false,
+    "editor.suggest.showIssues": false,
+    "editor.suggest.showReferences": false,
+    "editor.suggest.showUsers": false,
+    "editor.parameterHints.enabled": false,
+    "typescript.suggest.enabled": false,
+    "javascript.suggest.enabled": false,
+    "workbench.externalUriOpeners": {
+        "http": "default",
+        "https": "default"
+    },
+    "workbench.externalBrowser": "google-chrome",
+    "markdown.preview.openMarkdownLinks": "inEditor",
+    "claudeCode.useTerminal": true,
+    "claudeCode.selectedModel": "claude-opus-4-5-20251101",
+    "rust-analyzer.linkedProjects": [],
+    "rust-analyzer.initializeStopped": true,
+    "rust-analyzer.lru.capacity": 24,
+    "rust-analyzer.cachePriming.enable": false,
+    "rust-analyzer.cargo.allTargets": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "python.terminal.activateEnvironment": false,
+    "python-envs.terminal.autoActivationType": "off",
+    "json.schemaDownload.trustedDomains": {
+        "https://schemastore.azurewebsites.net/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://www.schemastore.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://json-schema.org/": true,
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://biomejs.dev": true
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    }
+}

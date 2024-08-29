@@ -1,0 +1,18 @@
+[user]
+	email = john.doe@users.noreply.github.com
+	name = John Doe
+[pull]
+        rebase = true
+[fetch]
+        prune = true
+[diff]
+        colorMoved = 
+[init]
+        defaultBranch = master
+[core]
+	trustctime = false
+	editor = /usr/bin/nvim
+[rebase]
+	committerDateIsAuthorDate = true
+[include]
+	path = ~/.gitaliases

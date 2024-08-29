@@ -1,0 +1,22 @@
+[alias]
+  a = add
+  a-p = add -p
+  b = branch
+  ch = checkout
+  co = commit
+  d = diff
+  f = commit --fixup HEAD
+  l = log --pretty="fuller"
+  m = merge
+  pul = pull
+  pul-f = pull --force
+  pus = push
+  pus-f = push --force
+  reb = rebase
+  ref = reflog --date="iso"
+  res = reset
+  res-h = reset --hard HEAD
+  ss = status
+  t = tag --sort="v:refname"
+  fix-squashed-date = !GIT_COMMITTER_DATE=\"$(git log -1 --format=%ai)\" git commit --amend --no-edit
+

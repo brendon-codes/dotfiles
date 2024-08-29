@@ -1,0 +1,17 @@
+{
+  "autoUpdates": "enabled",
+  "editorMode": "vim",
+  "mcpServers": {
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+          "@upstash/context7-mcp",
+	  "--api-key",
+	  "xxxxxxxxxxx"
+      ],
+      "env": {}
+    }
+  }
+}

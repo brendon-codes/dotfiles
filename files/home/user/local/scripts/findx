@@ -1,0 +1,26 @@
+#!/usr/bin/zsh
+
+args_search="${1}"
+args_nameglob="${2}"
+args_paths=("${@:3}") \
+
+exec \
+find \
+  ${args_paths} \
+  -type f \
+  -iname "${args_nameglob}" -a \
+  \( \
+    -not -ipath '*/node_modules/*' -a \
+    -not -ipath '*/.venv/*' -a \
+    -not -ipath '*/.git/*' -a \
+    -not -iname '*.dist.*' -a \
+    -not -iname '*.min.*' -a \
+    -not -iname '*.lock' \
+  \) \
+  -exec \
+    grep \
+      --color=always \
+      -HInF \
+      "${args_search}" \
+      '{}' \
+  \;
