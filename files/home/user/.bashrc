@@ -17,4 +17,3 @@ if [ -d ~/.bashrc.d ]; then
 fi
 
 unset rc
-. "$HOME/.cargo/env"
