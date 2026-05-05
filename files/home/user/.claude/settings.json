@@ -1,5 +1,7 @@
 {
+    "agentPushNotifEnabled": true,
     "autoUpdates": true,
+    "editorMode": "vim",
     "enabledPlugins": {
         "shopify-plugin@shopify-ai-toolkit": false
     },
