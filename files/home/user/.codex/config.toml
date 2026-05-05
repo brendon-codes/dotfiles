@@ -14,3 +14,26 @@ args = ["-y", "@upstash/context7-mcp", "--api-key", "ctx7sk-xxxxxxxxxxxx"]
 [features]
 apps = false
 
+[mcp_servers.playwright]
+enabled = false
+command = "npx"
+args = ["@playwright/mcp@latest"]
+
+[mcp_servers.shopify-dev-mcp]
+enabled = false
+command = "npx"
+args = ["-y", "@shopify/dev-mcp@latest"]
+
+[mcp_servers.vercel]
+enabled = false
+url = "https://mcp.vercel.com"
+
+[notice]
+fast_default_opt_out = true
+
+[notice.model_migrations]
+"gpt-5.2" = "gpt-5.2-codex"
+"gpt-5.3-codex" = "gpt-5.4"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
