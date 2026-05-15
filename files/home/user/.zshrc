@@ -46,7 +46,6 @@ export PS1="${P_C_B1}${P_F_DAT} | ${P_C_B2}${P_F_USR}${P_C_G1}@${P_F_HST}${P_S_N
 ##
 ## Aliases
 ##
-alias c="/usr/bin/code"
 alias g="/usr/bin/git"
 alias ga="g a"
 alias ga-p="g a-p"
