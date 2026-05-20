@@ -46,6 +46,7 @@ export PS1="${P_C_B1}${P_F_DAT} | ${P_C_B2}${P_F_USR}${P_C_G1}@${P_F_HST}${P_S_N
 ##
 ## Aliases
 ##
+alias c="/usr/bin/code"
 alias g="/usr/bin/git"
 alias ga="g a"
 alias ga-p="g a-p"
@@ -65,20 +66,21 @@ alias gres="g res"
 alias gres-h="g res-h"
 alias gref="g ref"
 alias greb="g reb"
+alias gcp="g cp"
 alias emacs="/usr/bin/emacs -nw"
 alias e="${HOME}/local/bin/els"
 alias ef="${HOME}/local/bin/els --full"
-alias vi="/usr/bin/nvim"
+alias vi="${HOME}/local/bin/nvim"
 
 ##
 ## Path
 ##
-export PATH="${PATH}:${HOME}/local/scripts:${HOME}/local/bin:${HOME}/.local/bin:${HOME}/.npm-global/bin"
+export PATH="${PATH}:${HOME}/local/scripts:${HOME}/local/bin:${HOME}/.local/bin:${HOME}/.npm-global/bin:${HOME}/.cargo/bin:${HOME}/.bun/bin"
 
 ##
 ## Defaults
 ##
-export EDITOR="/usr/bin/nvim"
+export EDITOR="${HOME}/local/bin/nvim"
 export LESS="--RAW-CONTROL-CHARS --quit-at-eof --quit-if-one-screen --no-init"
 export PAGER="/usr/bin/less --RAW-CONTROL-CHARS --quit-at-eof --quit-if-one-screen --no-init"
 

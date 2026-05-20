@@ -4,6 +4,7 @@
   b = branch
   ch = checkout
   co = commit
+  cp = cherry-pick
   d = diff
   f = commit --fixup HEAD
   l = log --pretty="fuller"

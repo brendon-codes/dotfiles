@@ -1,6 +1,6 @@
 [user]
 	email = john.doe@users.noreply.github.com
-	name = John Doe
+	name = Brendon
 [pull]
         rebase = true
 [fetch]
@@ -11,8 +11,9 @@
         defaultBranch = master
 [core]
 	trustctime = false
-	editor = /usr/bin/nvim
-[rebase]
-	committerDateIsAuthorDate = true
+	editor = ~/local/bin/nvim
 [include]
 	path = ~/.gitaliases
+[rebase]
+	committerDateIsAuthorDate = true
+
