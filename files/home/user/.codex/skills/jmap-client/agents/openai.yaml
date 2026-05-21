@@ -1,0 +1,4 @@
+interface:
+  display_name: "JMAP Client"
+  short_description: "Rust jmap-client integration guidance"
+  default_prompt: "Use $jmap-client to implement or review Rust JMAP mail flows with the jmap-client crate."
