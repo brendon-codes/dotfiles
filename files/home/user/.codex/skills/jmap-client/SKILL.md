@@ -233,7 +233,7 @@ The portable send pattern is:
 1. Resolve account, identity, drafts mailbox, and sent mailbox.
 2. Create a draft with `Email/set`.
 3. Submit it with `EmailSubmission/set`.
-4. Use `onSuccessUpdateEmail` to remove draft state and add sent mailbox state.
+4. Use `onSuccessUpdateEmail` to remove draft state, add `$seen`, and add sent mailbox state.
 5. Validate every method-level response, including the implicit post-submit update.
 
 When typed helpers cannot express required `null` patch semantics, post raw JSON. In particular, `jmap-client` 0.4.0 typed email patch helpers can serialize removal patches as boolean `false`, while RFC-compliant mailbox and keyword removals in `onSuccessUpdateEmail` require JSON `null`.
@@ -302,6 +302,7 @@ Required raw JSON shape:
         "onSuccessUpdateEmail": {
           "#submission": {
             "keywords/$draft": null,
+            "keywords/$seen": true,
             "mailboxIds/<drafts-mailbox-id>": null,
             "mailboxIds/<sent-mailbox-id>": true
           }
@@ -317,7 +318,7 @@ Response validation requirements:
 
 - The `Email/set` response with call id `s0` must contain a created id for `draft`.
 - The `EmailSubmission/set` response with call id `s1` must contain a created id for `submission`.
-- The implicit post-submit `Email/set` response associated with `s1` must not contain `notUpdated` errors.
+- The implicit post-submit `Email/set` response associated with `s1` must not contain `notUpdated` errors. Its requested update must include `keywords/$seen: true` so the sent-folder copy is read.
 - Bubble method-level errors with method names, for example `Identity/get failed`, `Mailbox/get failed`, `Email/set failed`, or `EmailSubmission/set failed`.
 
 ## Failure Modes
@@ -349,5 +350,6 @@ Before merging JMAP code:
 - Confirm send flows validate Core, Mail, and Submission capabilities.
 - Confirm `Identity/get` includes `URI::Submission` when the target server requires it.
 - Confirm `EmailSubmission/set` cleanup uses JSON `null` for removals.
+- Confirm `EmailSubmission/set` cleanup sets `keywords/$seen` to `true` so sent copies are marked read.
 - Confirm method-level errors identify the failing JMAP method.
 - Run focused integration tests against a mock JMAP server or a controlled test account.
