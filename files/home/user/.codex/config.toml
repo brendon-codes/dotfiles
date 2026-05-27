@@ -19,7 +19,7 @@ fast_default_opt_out = true
 "gpt-5.3-codex" = "gpt-5.4"
 
 [tui]
-alternate_screen = "auto"
+alternate_screen = "always"
 model_availability_nux = { "gpt-5.5" = 4 }
 
 ##
