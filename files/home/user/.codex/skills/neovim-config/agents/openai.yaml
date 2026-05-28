@@ -1,0 +1,4 @@
+interface:
+  display_name: "Neovim Config"
+  short_description: "Maintain this Kickstart.nvim config safely"
+  default_prompt: "Use $neovim-config to make a safe change to my Neovim config."

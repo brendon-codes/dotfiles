@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trello"
+  short_description: "Manage Trello boards, lists, cards, labels, and CLI workflows"
+  default_prompt: "Use $trello to manage Trello boards, lists, cards, labels, search, sync, auth, and CLI workflows."
