@@ -8,13 +8,13 @@
     "muteSystemAudioDuringRecording": false,
     "hotkey": "F10",
     "toggleRecordingHotkey": false,
-    "cancelTranscriptionHotkey": "Escape",
-    "repasteTranscriptionHotkey": "F8",
+    "cancelTranscriptionHotkey": "F11",
+    "repasteTranscriptionHotkey": "F12",
     "launchAtStartup": false,
     "releaseChannel": "stable",
     "automaticUpdatesEnabled": true,
     "aiCommandModesEnabled": true,
-    "disableLocalTranscriptionHistory": false,
+    "disableLocalTranscriptionHistory": true,
     "realtimeTranscription": {
       "enabled": true,
       "autoFormatterEnabled": false,
@@ -130,6 +130,21 @@
         "defaultMode": "type",
         "modeMap": {},
         "recentTargets": [
+          {
+            "id": "alacritty",
+            "name": "Alacritty",
+            "lastUsed": 1780421932323
+          },
+          {
+            "id": "vibe-typer",
+            "name": "Vibe Typer",
+            "lastUsed": 1780420252923
+          },
+          {
+            "id": "google-chrome",
+            "name": "ChatGPT",
+            "lastUsed": 1780420044349
+          }
         ]
       },
       "tonePreset": "casual"
