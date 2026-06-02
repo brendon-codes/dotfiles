@@ -140,6 +140,76 @@
           "correction": "/",
           "matchMode": "exact",
           "caseSensitive": false
+        },
+        {
+          "id": "3cedd3dd-8cd3-4aa3-97b1-dfd9b1328303",
+          "incorrect": "number one",
+          "correction": "1. ",
+          "matchMode": "exact",
+          "caseSensitive": false
+        },
+        {
+          "id": "dc3f47ea-550a-47eb-b308-a2798dae5e2d",
+          "incorrect": "number two",
+          "correction": "2. ",
+          "matchMode": "exact",
+          "caseSensitive": false
+        },
+        {
+          "id": "35c63ca6-2c7d-406c-ac6a-abedd7eda4d0",
+          "incorrect": "number three",
+          "correction": "3. ",
+          "matchMode": "exact",
+          "caseSensitive": false
+        },
+        {
+          "id": "41b50c29-d0c5-451e-a58c-f5f37caa69be",
+          "incorrect": "number four",
+          "correction": "4. ",
+          "matchMode": "exact",
+          "caseSensitive": false
+        },
+        {
+          "id": "4df5323d-6e64-4c0d-991f-4ff82289ab75",
+          "incorrect": "number five",
+          "correction": "5. ",
+          "matchMode": "exact",
+          "caseSensitive": false
+        },
+        {
+          "id": "4a41a3b3-cf4d-4667-bd86-63210c7ebcf3",
+          "incorrect": "number six",
+          "correction": "6. ",
+          "matchMode": "exact",
+          "caseSensitive": false
+        },
+        {
+          "id": "2bbb231c-e5c4-4345-912a-a9bc757a8661",
+          "incorrect": "number seven",
+          "correction": "7. ",
+          "matchMode": "exact",
+          "caseSensitive": false
+        },
+        {
+          "id": "975643e1-ac30-4804-91b5-468ce3ad15e5",
+          "incorrect": "number eight",
+          "correction": "8. ",
+          "matchMode": "exact",
+          "caseSensitive": false
+        },
+        {
+          "id": "e66f2c38-02fd-4e2f-9cf5-141ce3b64729",
+          "incorrect": "number nine",
+          "correction": "9. ",
+          "matchMode": "exact",
+          "caseSensitive": false
+        },
+        {
+          "id": "d7b76bbd-75e0-409e-93b1-88555db2d874",
+          "incorrect": "number ten",
+          "correction": "10. ",
+          "matchMode": "exact",
+          "caseSensitive": false
         }
       ],
       "version": 1
@@ -161,7 +231,7 @@
           {
             "id": "alacritty",
             "name": "Alacritty",
-            "lastUsed": 1780423854287
+            "lastUsed": 1780424394604
           },
           {
             "id": "vibe-typer",
@@ -181,6 +251,6 @@
     "lastSignInEmail": "b@example.com"
   },
   "sync": {
-    "updatedAt": "2026-06-02T18:11:16.646Z"
+    "updatedAt": "2026-06-02T18:17:35.999Z"
   }
 }
