@@ -27,16 +27,16 @@ model_availability_nux = { "gpt-5.5" = 4 }
 ## MCP
 ##
 
-
 [mcp_servers.context7]
 command = "npx"
-args = ["-y", "@upstash/context7-mcp", "--api-key", "ctx7sk-xxxxxxxxxxxxxx"]
+args = ["-y", "@upstash/context7-mcp", "--api-key", "ctx7sk-xxxxxx"]
 enabled = true
 
 [mcp_servers.chrome-devtools]
 command = "npx"
-args = ["chrome-devtools-mcp@latest"]
+args = ["-y", "chrome-devtools-mcp@latest", "--browser-url=http://127.0.0.1:9222"]
 enabled = true
+tools.take_snapshot.approval_mode = "approve"
 
 [mcp_servers.playwright]
 command = "npx"
@@ -53,9 +53,9 @@ url = "https://mcp.vercel.com"
 enabled = false
 
 ##
-## Paths
+## Projects
 ##
 
-[projects."/home/user/xxxxxxxxxxxxx"]
+[projects."/home/user/xxxxxxx"]
 trust_level = "trusted"
 
