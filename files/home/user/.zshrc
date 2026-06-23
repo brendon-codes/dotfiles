@@ -76,7 +76,7 @@ alias vi="${HOME}/local/bin/nvim"
 ##
 ## Path
 ##
-export PATH="${PATH}:${HOME}/local/scripts:${HOME}/local/bin:${HOME}/.local/bin:${HOME}/.npm-global/bin:${HOME}/.cargo/bin:${HOME}/.bun/bin"
+export PATH="${PATH}:${HOME}/local/scripts:${HOME}/local/bin:${HOME}/.local/bin:${HOME}/.npm-global/bin:${HOME}/.cargo/bin:${HOME}/.bun/bin:${HOME}/go/bin"
 
 ##
 ## Defaults

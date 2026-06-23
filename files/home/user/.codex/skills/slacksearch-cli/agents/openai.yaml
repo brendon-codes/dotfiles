@@ -1,0 +1,4 @@
+interface:
+  display_name: "Slacksearch CLI"
+  short_description: "Use the Slack search CLI"
+  default_prompt: "Use $slacksearch-cli to help me configure, authenticate, run searches, and troubleshoot the Slack Search CLI."
