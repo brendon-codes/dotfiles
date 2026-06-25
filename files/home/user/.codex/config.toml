@@ -22,21 +22,27 @@ fast_default_opt_out = true
 [tui]
 alternate_screen = "always"
 model_availability_nux = { "gpt-5.5" = 4 }
+session_picker_view = "comfortable"
 
 ##
-## MCP
+## MCP Configs
 ##
-
-[mcp_servers.context7]
-command = "npx"
-args = ["-y", "@upstash/context7-mcp", "--api-key", "ctx7sk-xxxxxx"]
-enabled = true
 
 [mcp_servers.chrome-devtools]
 command = "npx"
-args = ["-y", "chrome-devtools-mcp@latest", "--browser-url=http://127.0.0.1:9222"]
+args = ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
+tools.click = { approval_mode = "approve" }
+tools.drag = { approval_mode = "approve" }
+tools.emulate = { approval_mode = "approve" }
+tools.evaluate_script = { approval_mode = "approve" }
+tools.fill_form = { approval_mode = "approve" }
+tools.navigate_page = { approval_mode = "approve" }
+tools.new_page = { approval_mode = "approve" }
+tools.press_key = { approval_mode = "approve" }
+tools.resize_page = { approval_mode = "approve" }
+tools.take_screenshot = { approval_mode = "approve" }
+tools.take_snapshot = { approval_mode = "approve" }
 enabled = true
-tools.take_snapshot.approval_mode = "approve"
 
 [mcp_servers.playwright]
 command = "npx"
@@ -53,9 +59,9 @@ url = "https://mcp.vercel.com"
 enabled = false
 
 ##
-## Projects
+## Paths
 ##
 
-[projects."/home/user/xxxxxxx"]
+[projects."/home/user/foo"]
 trust_level = "trusted"
 
