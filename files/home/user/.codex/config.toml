@@ -42,20 +42,11 @@ tools.press_key = { approval_mode = "approve" }
 tools.resize_page = { approval_mode = "approve" }
 tools.take_screenshot = { approval_mode = "approve" }
 tools.take_snapshot = { approval_mode = "approve" }
-enabled = true
-
-[mcp_servers.playwright]
-command = "npx"
-args = ["@playwright/mcp@latest"]
 enabled = false
 
 [mcp_servers.shopify-dev-mcp]
 command = "npx"
 args = ["-y", "@shopify/dev-mcp@latest"]
-enabled = false
-
-[mcp_servers.vercel]
-url = "https://mcp.vercel.com"
 enabled = false
 
 ##

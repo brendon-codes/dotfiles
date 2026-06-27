@@ -9,8 +9,7 @@
   },
   "model": "opus",
   "enabledPlugins": {
-    "shopify-plugin@shopify-ai-toolkit": false,
-    "vercel@claude-plugins-official": false
+    "shopify-plugin@shopify-ai-toolkit": false
   },
   "forceLoginMethod": "claudeai",
   "effortLevel": "high",
