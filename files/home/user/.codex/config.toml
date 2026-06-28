@@ -20,29 +20,48 @@ fast_default_opt_out = true
 "gpt-5.3-codex" = "gpt-5.4"
 
 [tui]
+status_line = ["model-with-reasoning", "context-remaining", "current-dir"]
 alternate_screen = "always"
 model_availability_nux = { "gpt-5.5" = 4 }
 session_picker_view = "comfortable"
 
-##
-## MCP Configs
-##
-
 [mcp_servers.chrome-devtools]
 command = "npx"
 args = ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
-tools.click = { approval_mode = "approve" }
-tools.drag = { approval_mode = "approve" }
-tools.emulate = { approval_mode = "approve" }
-tools.evaluate_script = { approval_mode = "approve" }
-tools.fill_form = { approval_mode = "approve" }
-tools.navigate_page = { approval_mode = "approve" }
-tools.new_page = { approval_mode = "approve" }
-tools.press_key = { approval_mode = "approve" }
-tools.resize_page = { approval_mode = "approve" }
-tools.take_screenshot = { approval_mode = "approve" }
-tools.take_snapshot = { approval_mode = "approve" }
 enabled = false
+
+[mcp_servers.chrome-devtools.tools.click]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.drag]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.emulate]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.evaluate_script]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.fill_form]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.navigate_page]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.new_page]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.press_key]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.resize_page]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.take_screenshot]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.take_snapshot]
+approval_mode = "approve"
 
 [mcp_servers.shopify-dev-mcp]
 command = "npx"
