@@ -26,15 +26,6 @@ model_availability_nux = { "gpt-5.5" = 4 }
 session_picker_view = "comfortable"
 
 ##
-## MCP
-##
-
-[mcp_servers.shopify-dev-mcp]
-command = "npx"
-args = ["-y", "@shopify/dev-mcp@latest"]
-enabled = false
-
-##
 ## Paths
 ##
 

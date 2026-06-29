@@ -1,0 +1,9 @@
+#!/bin/bash
+
+npm install -g skills
+skills add Shopify/shopify-ai-toolkit
+skills add agent-browser
+skills add clerk-cli
+skills add find-docs
+skills add playwright-cli
+
