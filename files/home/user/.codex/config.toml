@@ -25,43 +25,9 @@ alternate_screen = "always"
 model_availability_nux = { "gpt-5.5" = 4 }
 session_picker_view = "comfortable"
 
-[mcp_servers.chrome-devtools]
-command = "npx"
-args = ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
-enabled = false
-
-[mcp_servers.chrome-devtools.tools.click]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.drag]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.emulate]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.evaluate_script]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.fill_form]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.navigate_page]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.new_page]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.press_key]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.resize_page]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.take_screenshot]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.take_snapshot]
-approval_mode = "approve"
+##
+## MCP
+##
 
 [mcp_servers.shopify-dev-mcp]
 command = "npx"
