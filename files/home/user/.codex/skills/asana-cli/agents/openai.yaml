@@ -1,4 +1,0 @@
-interface:
-  display_name: "Asana CLI"
-  short_description: "Use the Asana CLI"
-  default_prompt: "Use $asana-cli to help me configure, validate, run, and troubleshoot the Asana CLI."

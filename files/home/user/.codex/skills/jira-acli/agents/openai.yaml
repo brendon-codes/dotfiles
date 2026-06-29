@@ -1,4 +1,0 @@
-interface:
-  display_name: "Jira acli"
-  short_description: "Use Atlassian acli for Jira Cloud"
-  default_prompt: "Use $jira-acli to inspect Jira work items with acli."
