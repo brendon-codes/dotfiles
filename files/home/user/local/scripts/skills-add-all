@@ -6,4 +6,5 @@ skills add agent-browser
 skills add clerk-cli
 skills add find-docs
 skills add playwright-cli
+skills add clerk/skills
 
