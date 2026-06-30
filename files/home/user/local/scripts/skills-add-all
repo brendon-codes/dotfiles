@@ -9,4 +9,6 @@ skills add -g playwright-cli
 skills add -g clerk/skills
 skills add -g neondatabase/agent-skills
 skills add -g neondatabase/ai-rules
+skills add -g vercel-labs/skills
+skills add -g vercel-labs/agent-skills
 
