@@ -1,10 +1,12 @@
 #!/bin/bash
 
 npm install -g skills
-skills add Shopify/shopify-ai-toolkit
-skills add agent-browser
-skills add clerk-cli
-skills add find-docs
-skills add playwright-cli
-skills add clerk/skills
+skills add -g Shopify/shopify-ai-toolkit
+skills add -g agent-browser
+skills add -g clerk-cli
+skills add -g find-docs
+skills add -g playwright-cli
+skills add -g clerk/skills
+skills add -g neondatabase/agent-skills
+skills add -g neondatabase/ai-rules
 
