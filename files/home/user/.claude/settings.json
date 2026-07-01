@@ -1,7 +1,6 @@
 {
   "env": {
     "CLAUDE_CODE_EFFORT_LEVEL": "high",
-    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",
     "ENABLE_CLAUDEAI_MCP_SERVERS": "false"
   },
   "permissions": {
@@ -9,15 +8,16 @@
   },
   "model": "opus",
   "enabledPlugins": {
-    "shopify-plugin@shopify-ai-toolkit": false
+    "shopify-plugin@shopify-ai-toolkit": false,
+    "vercel@claude-plugins-official": false
   },
   "forceLoginMethod": "claudeai",
   "effortLevel": "high",
+  "tui": "default",
   "skipDangerousModePermissionPrompt": false,
   "theme": "dark",
   "editorMode": "vim",
   "agentPushNotifEnabled": true,
   "skipAutoPermissionPrompt": true,
-  "autoUpdates": true,
-  "tui": "default"
+  "autoUpdates": true
 }
