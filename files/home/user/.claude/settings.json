@@ -7,6 +7,10 @@
     "defaultMode": "auto"
   },
   "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "input=$(cat); t=$(printf \"%s\" \"$input\" | jq -r \".transcript_path // \\\"\\\"\"); tok=0; [ -f \"$t\" ] && tok=$(jq -s \"[.[]|select(.isSidechain!=true)|.message.usage|select(.!=null)|(.input_tokens//0)+(.cache_creation_input_tokens//0)+(.cache_read_input_tokens//0)]|last//0\" \"$t\"); printf \"%s%% context\" \"$((tok*100/200000))\""
+  },
   "enabledPlugins": {
     "shopify-plugin@shopify-ai-toolkit": false,
     "vercel@claude-plugins-official": false
