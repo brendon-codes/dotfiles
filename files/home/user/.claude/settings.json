@@ -1,6 +1,5 @@
 {
   "env": {
-    "CLAUDE_CODE_EFFORT_LEVEL": "high",
     "ENABLE_CLAUDEAI_MCP_SERVERS": "false"
   },
   "permissions": {
