@@ -20,7 +20,8 @@ fast_default_opt_out = true
 "gpt-5.3-codex" = "gpt-5.4"
 
 [tui]
-status_line = ["model-with-reasoning", "context-remaining", "current-dir"]
+status_line = ["current-dir", "git-branch", "model", "reasoning", "context-used", "five-hour-limit", "weekly-limit"]
+status_line_use_colors = true
 alternate_screen = "always"
 model_availability_nux = { "gpt-5.5" = 4 }
 session_picker_view = "comfortable"
@@ -29,6 +30,6 @@ session_picker_view = "comfortable"
 ## Paths
 ##
 
-[projects."/home/user/foo"]
+[projects."/home/user/xxxxxx"]
 trust_level = "trusted"
 
