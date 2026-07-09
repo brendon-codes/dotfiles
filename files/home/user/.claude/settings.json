@@ -3,12 +3,42 @@
     "ENABLE_CLAUDEAI_MCP_SERVERS": "false"
   },
   "permissions": {
-    "defaultMode": "auto"
+    "defaultMode": "auto",
+    "ask": [
+      "WebSearch",
+      "Bash(npm:*)",
+      "Bash(gh:*)",
+      "Bash(vercel:*)",
+      "Bash(uv:*)",
+      "Bash(jq:*)",
+      "Bash(gh:*)",
+      "Bash(bun:*)",
+      "Bash(databricks:*)",
+      "Bash(pgrep:*)",
+      "Bash(kill:*)",
+      "Bash(docker:*)",
+      "Bash(git:*)",
+      "Bash(npx:*)",
+      "Bash(agent-browser:*)",
+      "Bash(acli:*)",
+      "Bash(ctx7:*)",
+      "Bash(find:*)",
+      "Bash(fd:*)",
+      "Bash(fdfind:*)",
+      "Bash(rg:*)",
+      "Bash(grep:*)",
+      "Bash(ps:*)",
+      "Bash(sed:*)",
+      "Bash(quickbase:*)",
+      "Bash(asana:*)",
+      "Bash(servicetitan:*)",
+      "Bash(hubspot:*)",
+      "Bash(hs:*)"
+    ]
   },
-  "model": "opus[1m]",
   "statusLine": {
     "type": "command",
-    "command": "input=$(cat); absdir=$(printf '%s' \"$input\" | jq -r '.workspace.current_dir // .cwd // \"\"'); case \"$absdir\" in \"$HOME\"*) dir=\"~${absdir#\"$HOME\"}\";; *) dir=\"$absdir\";; esac; branch=$(git -C \"$absdir\" symbolic-ref --short HEAD 2>/dev/null); if [ -z \"$branch\" ] && git -C \"$absdir\" rev-parse --git-dir >/dev/null 2>&1; then branch='-'; fi; model=$(printf '%s' \"$input\" | jq -r '.model.id // \"?\"'); effort=$(printf '%s' \"$input\" | jq -r '.effort.level // \"\"'); ctx=$(printf '%s' \"$input\" | jq -r 'if .context_window.used_percentage != null then .context_window.used_percentage elif ((.context_window.total_input_tokens // 0) > 0 and (.context_window.context_window_size // 0) > 0) then (.context_window.total_input_tokens / .context_window.context_window_size * 100) else empty end'); h5=$(printf '%s' \"$input\" | jq -r '.rate_limits.five_hour.used_percentage // 0'); d7=$(printf '%s' \"$input\" | jq -r '.rate_limits.seven_day.used_percentage // 0'); e=$(printf '\\033'); R=\"${e}[0m\"; D=\"${e}[2m\"; C1=\"${e}[36m\"; C2=\"${e}[32m\"; C3=\"${e}[35m\"; C4=\"${e}[33m\"; C5=\"${e}[34m\"; C6=\"${e}[31m\"; sep=\" ${D}|${R} \"; out=\"${C1}${dir}${R}\"; [ -n \"$branch\" ] && out=\"${out}${sep}${C2}${branch}${R}\"; out=\"${out}${sep}${C3}${model}${R}\"; [ -n \"$effort\" ] && out=\"${out}${sep}${C4}${effort}${R}\"; [ -n \"$ctx\" ] && out=\"${out}${sep}${C5}$(printf '%.0f' \"$ctx\")% ctx${R}\"; out=\"${out}${sep}${C6}$(printf '%.0f' \"$h5\")%${R} ${C6}$(printf '%.0f' \"$d7\")%${R} ${C6}5h 7d${R}\"; printf '%s' \"$out\""
+    "command": "input=$(cat); absdir=$(printf '%s' \"$input\" | jq -r '.workspace.current_dir // .cwd // \"\"'); case \"$absdir\" in \"$HOME\"*) dir=\"~${absdir#\"$HOME\"}\";; *) dir=\"$absdir\";; esac; branch=$(git -C \"$absdir\" symbolic-ref --short HEAD 2>/dev/null); if [ -z \"$branch\" ] && git -C \"$absdir\" rev-parse --git-dir >/dev/null 2>&1; then branch='-'; fi; model=$(printf '%s' \"$input\" | jq -r '.model.id // \"?\"'); effort=$(printf '%s' \"$input\" | jq -r '.effort.level // \"\"'); ctx=$(printf '%s' \"$input\" | jq -r 'if .context_window.used_percentage != null then .context_window.used_percentage elif ((.context_window.total_input_tokens // 0) > 0 and (.context_window.context_window_size // 0) > 0) then (.context_window.total_input_tokens / .context_window.context_window_size * 100) else 0 end'); h5=$(printf '%s' \"$input\" | jq -r '.rate_limits.five_hour.used_percentage // 0'); d7=$(printf '%s' \"$input\" | jq -r '.rate_limits.seven_day.used_percentage // 0'); e=$(printf '\\033'); R=\"${e}[0m\"; D=\"${e}[2m\"; C1=\"${e}[36m\"; C2=\"${e}[32m\"; C3=\"${e}[35m\"; C4=\"${e}[33m\"; C5=\"${e}[34m\"; C6=\"${e}[31m\"; sep=\" ${D}|${R} \"; out=\"${C1}${dir}${R}\"; [ -n \"$branch\" ] && out=\"${out}${sep}${C2}${branch}${R}\"; out=\"${out}${sep}${C3}${model}${R}\"; [ -n \"$effort\" ] && out=\"${out}${sep}${C4}${effort}${R}\"; out=\"${out}${sep}${C5}$(printf '%.0f' \"$ctx\")% ctx${R}\"; out=\"${out}${sep}${C6}$(printf '%.0f' \"$h5\")% 5h${R}${sep}${C6}$(printf '%.0f' \"$d7\")% 7d${R}\"; printf '%s' \"$out\""
   },
   "enabledPlugins": {
     "shopify-plugin@shopify-ai-toolkit": false,
@@ -22,5 +52,6 @@
   "editorMode": "vim",
   "agentPushNotifEnabled": true,
   "skipAutoPermissionPrompt": true,
-  "autoUpdates": true
+  "autoUpdates": true,
+  "model": "claude-fable-5[1m]"
 }
