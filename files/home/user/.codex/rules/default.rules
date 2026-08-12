@@ -25,10 +25,6 @@ prefix_rule(pattern=[
 ], decision="ask")
 
 prefix_rule(pattern=[
-  "bun"
-], decision="ask")
-
-prefix_rule(pattern=[
   "bunx"
 ], decision="ask")
 
@@ -40,10 +36,6 @@ prefix_rule(pattern=[
 prefix_rule(pattern=[
   "npm",
   "test"
-], decision="ask")
-
-prefix_rule(pattern=[
-  "npm"
 ], decision="ask")
 
 prefix_rule(pattern=[
@@ -61,20 +53,12 @@ prefix_rule(pattern=[
 ], decision="ask")
 
 prefix_rule(pattern=[
-  "pnpm"
-], decision="ask")
-
-prefix_rule(pattern=[
   "pnpx"
 ], decision="ask")
 
 prefix_rule(pattern=[
   "uv",
   "run"
-], decision="ask")
-
-prefix_rule(pattern=[
-  "uv"
 ], decision="ask")
 
 prefix_rule(pattern=[
@@ -93,16 +77,8 @@ prefix_rule(pattern=[
 ], decision="ask")
 
 prefix_rule(pattern=[
-  "git"
-], decision="ask")
-
-prefix_rule(pattern=[
   "gh",
   "pr"
-], decision="ask")
-
-prefix_rule(pattern=[
-  "gh"
 ], decision="ask")
 
 prefix_rule(pattern=[
