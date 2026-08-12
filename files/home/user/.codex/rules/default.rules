@@ -1,7 +1,6 @@
 prefix_rule(pattern=[[
   "npm",
   "pnpm",
-  "gh",
   "uv",
   "jq",
   "bun",
