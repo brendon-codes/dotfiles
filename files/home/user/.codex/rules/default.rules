@@ -7,7 +7,6 @@ prefix_rule(pattern=[[
   "pgrep",
   "kill",
   "docker",
-  "git",
   "agent-browser",
   "ctx7",
   "find",
@@ -18,4 +17,44 @@ prefix_rule(pattern=[[
   "ps",
   "sed"
 ]], decision="ask")
+
+prefix_rule(pattern=[
+  "git",
+  "add"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "git",
+  "commit"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "git",
+  "branch"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "git"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "gh",
+  "pr"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "gh"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "aws"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "vercel"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "wrangler"
+], decision="ask")
 

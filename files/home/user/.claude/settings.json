@@ -9,7 +9,6 @@
       "Bash(pnpm *)",
       "Bash(uv *)",
       "Bash(jq *)",
-      "Bash(gh *)",
       "Bash(bun *)",
       "Bash(pgrep *)",
       "Bash(kill *)",
@@ -23,7 +22,16 @@
       "Bash(rg *)",
       "Bash(grep *)",
       "Bash(ps *)",
-      "Bash(sed *)"
+      "Bash(sed *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(git *)",
+      "Bash(gh pr *)",
+      "Bash(gh *)",
+      "Bash(aws *)",
+      "Bash(vercel *)",
+      "Bash(wrangler *)"
     ],
     "defaultMode": "auto"
   },
