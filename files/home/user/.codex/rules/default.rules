@@ -1,18 +1,15 @@
-prefix_rule(pattern=[
+prefix_rule(pattern=[[
   "npm",
+  "pnpm",
   "gh",
-  "vercel",
   "uv",
   "jq",
   "bun",
-  "databricks",
   "pgrep",
   "kill",
   "docker",
   "git",
-  "npx",
   "agent-browser",
-  "acli",
   "ctx7",
   "find",
   "fd",
@@ -20,11 +17,6 @@ prefix_rule(pattern=[
   "rg",
   "grep",
   "ps",
-  "sed",
-  "quickbase",
-  "asana",
-  "servicetitan",
-  "hubspot",
-  "hs"
-], decision="ask")
+  "sed"
+]], decision="ask")
 
