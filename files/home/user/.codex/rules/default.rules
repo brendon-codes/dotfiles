@@ -1,9 +1,5 @@
 prefix_rule(pattern=[[
-  "npm",
-  "pnpm",
-  "uv",
   "jq",
-  "bun",
   "pgrep",
   "kill",
   "docker",
@@ -17,6 +13,69 @@ prefix_rule(pattern=[[
   "ps",
   "sed"
 ]], decision="ask")
+
+prefix_rule(pattern=[
+  "bun",
+  "run"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "bun",
+  "test"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "bun"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "bunx"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "npm",
+  "run"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "npm",
+  "test"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "npm"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "npx"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "pnpm",
+  "run"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "pnpm",
+  "test"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "pnpm"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "pnpx"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "uv",
+  "run"
+], decision="ask")
+
+prefix_rule(pattern=[
+  "uv"
+], decision="ask")
 
 prefix_rule(pattern=[
   "git",
