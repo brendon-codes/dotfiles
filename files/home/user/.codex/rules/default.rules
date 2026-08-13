@@ -12,84 +12,84 @@ prefix_rule(pattern=[[
   "grep",
   "ps",
   "sed"
-]], decision="ask")
+]], decision="prompt")
 
 prefix_rule(pattern=[
   "bun",
   "run"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "bun",
   "test"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "bunx"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "npm",
   "run"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "npm",
   "test"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "npx"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "pnpm",
   "run"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "pnpm",
   "test"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "pnpx"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "uv",
   "run"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "git",
   "add"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "git",
   "commit"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "git",
   "branch"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "gh",
   "pr"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "aws"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "vercel"
-], decision="ask")
+], decision="prompt")
 
 prefix_rule(pattern=[
   "wrangler"
-], decision="ask")
+], decision="prompt")
 
