@@ -34,6 +34,7 @@
       "Bash(pnpm test *)",
       "Bash(aws s3 ls *)",
       "Bash(vercel logs *)",
+      "Bash(vercel inspect *)",
       "Bash(wrangler r2 object get *)",
       "Bash(wrangler r2 bucket list *)",
       "Bash(wrangler r2 bucket info *)",
