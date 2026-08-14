@@ -1,95 +1,126 @@
-prefix_rule(pattern=[[
-  "jq",
-  "pgrep",
-  "kill",
-  "docker",
-  "agent-browser",
-  "ctx7",
-  "find",
-  "fd",
-  "fdfind",
-  "rg",
-  "grep",
-  "ps",
-  "sed"
-]], decision="prompt")
+prefix_rule(
+  pattern=[[
+    "jq",
+    "pgrep",
+    "kill",
+    "docker",
+    "agent-browser",
+    "ctx7",
+    "find",
+    "fd",
+    "fdfind",
+    "rg",
+    "grep",
+    "ps",
+    "sed"
+  ]],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "bun",
-  "run"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    ["bun", "npm", "pnpm", "uv"],
+    "run",
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "bun",
-  "test"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    ["bun", "npm", "pnpm"],
+    "test",
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "bunx"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    "git",
+    ["add", "commit", "branch", "worktree", "status"],
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "npm",
-  "run"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    "gh",
+    ["pr", "search"],
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "npm",
-  "test"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    "aws",
+    "s3",
+    "ls"
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "npx"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    "vercel",
+    "logs"
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "pnpm",
-  "run"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    "wrangler",
+    "r2",
+    "object",
+    "get"
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "pnpm",
-  "test"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    "wrangler",
+    "r2",
+    "bucket",
+    ["list", "info"]
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "pnpx"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    "wrangler",
+    "queues",
+    ["list", "info"]
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "uv",
-  "run"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    "acli",
+    "jira",
+    "board",
+    ["get", "search", "view"]
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "git",
-  "add"
-], decision="prompt")
+prefix_rule(
+  pattern=[
+    "acli",
+    "jira",
+    "workitem",
+    ["search", "view"]
+  ],
+  decision="prompt",
+)
 
-prefix_rule(pattern=[
-  "git",
-  "commit"
-], decision="prompt")
-
-prefix_rule(pattern=[
-  "git",
-  "branch"
-], decision="prompt")
-
-prefix_rule(pattern=[
-  "gh",
-  "pr"
-], decision="prompt")
-
-prefix_rule(pattern=[
-  "aws"
-], decision="prompt")
-
-prefix_rule(pattern=[
-  "vercel"
-], decision="prompt")
-
-prefix_rule(pattern=[
-  "wrangler"
-], decision="prompt")
+prefix_rule(
+  pattern=[[
+    "bunx",
+    "npx",
+    "pnpx"
+  ]],
+  decision="prompt",
+)
 
