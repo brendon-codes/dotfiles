@@ -36,7 +36,7 @@ prefix_rule(
 prefix_rule(
   pattern=[
     "git",
-    ["add", "commit", "branch", "worktree", "status"],
+    ["add", "commit", "branch", "worktree", "status", "checkout"],
   ],
   decision="prompt",
 )

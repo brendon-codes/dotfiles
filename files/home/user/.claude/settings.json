@@ -23,6 +23,7 @@
       "Bash(git branch *)",
       "Bash(git worktree *)",
       "Bash(git status *)",
+      "Bash(git checkout *)",
       "Bash(gh pr *)",
       "Bash(gh search *)",
       "Bash(bun run *)",
