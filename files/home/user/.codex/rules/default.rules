@@ -19,7 +19,7 @@ prefix_rule(
 
 prefix_rule(
   pattern=[
-    ["bun", "npm", "pnpm", "uv"],
+    ["bun", "npm", "pnpm", "uv", "vp"],
     "run",
   ],
   decision="prompt",
@@ -27,7 +27,7 @@ prefix_rule(
 
 prefix_rule(
   pattern=[
-    ["bun", "npm", "pnpm"],
+    ["bun", "npm", "pnpm", "vp"],
     "test",
   ],
   decision="prompt",
@@ -45,6 +45,15 @@ prefix_rule(
   pattern=[
     "gh",
     ["pr", "search"],
+  ],
+  decision="prompt",
+)
+
+prefix_rule(
+  pattern=[
+    "gh",
+    "run",
+    "view"
   ],
   decision="prompt",
 )
