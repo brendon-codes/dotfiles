@@ -70,7 +70,7 @@ prefix_rule(
 prefix_rule(
   pattern=[
     "vercel",
-    ["logs", "inspect"]
+    ["logs", "inspect", "ls"]
   ],
   decision="prompt",
 )
